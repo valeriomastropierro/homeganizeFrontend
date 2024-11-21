@@ -1,7 +1,7 @@
 import axios from "axios";
 
 axios.defaults.withCredentials = true
-Backend_Server="https://homeganizebackend.onrender.com"
+const Backend_Server="https://homeganizebackend.onrender.com"
 
 export async function signup(user) {
     return await axios.post('Backend_Server/signup', user)
