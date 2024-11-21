@@ -1,0 +1,42 @@
+.card {
+    border: 1px solid hsl(0, 0%, 80%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Spazio tra le card */
+    border-radius: 8px; /* Angoli arrotondati */
+}
+
+.icon-container {
+    cursor: pointer; /* Cambia il cursore per indicare cliccabile */
+    font-size: 3rem; /* Dimensione dell'icona */
+}
+
+.task-name {
+    font-weight: bold; 
+}
+
+.task-priority {
+    position:absolute;
+    top: 3px;
+    right: 23px;
+    font-style: italic; 
+}
+
+.task-urgent{
+    background-color: red;
+}
+
+.complete {
+    background-color: hsl(120, 86%, 37%);
+}
+
+.not-expanded{
+    max-height: 104px;
+    
+}
+
+.moreInfoContent {
+    word-break: break-word; /*gestisce le parole molto lunghe evitando che la pagina si rompa */
+    max-height: 112px; /*exact px count for 4 lines*/
+    overflow-y: auto;
+    text-align: justify;
+}

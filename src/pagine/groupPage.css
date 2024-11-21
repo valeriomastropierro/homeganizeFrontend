@@ -1,0 +1,85 @@
+.group-container {
+    max-width: 500px;
+    margin: 5vh auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.group-section {
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.group-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.group-form label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.group-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.group-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.group-button, .leave-button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.leave-button {
+    background-color: #d9534f;
+}
+
+.group-button:hover:not(:disabled),
+.leave-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.group-button:disabled,
+.leave-button:disabled {
+    background-color: #d0d0d0;
+}
+
+.error-message {
+    padding: 0.8rem;
+    background-color: #ffdddd;
+    color: #b50000;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.success-message {
+    padding: 0.8rem;
+    background-color: #ddffdd;
+    color: #007b00;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1rem;
+}
